@@ -2,15 +2,33 @@
 
 
 
+.centro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
 
+.enviar{
+    width: 20px;
+}
 
+.btn{
+    border: none;
 
+}
 
-
-
+.opc{
+    width: 150px;
+}
 
 .invisivel{
     display: none;
+}
+
+.digitar{
+    display: flex;
 }
 
 .glow-on-hover {

@@ -98,7 +98,6 @@ function forca(){
     if (set.size == acertos.length) {
         console.log('Parabens, voce ganhou!')
         jogo.innerHTML = `Parabéns você ganhou<br>`
-        
 
     }
 
@@ -106,6 +105,10 @@ function forca(){
         jogo.innerHTML = `Acabou suas chances, a palavra era: ${palavra}`
     }
 })
+
+
 }
+
+
 
 
