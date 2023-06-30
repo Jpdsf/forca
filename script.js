@@ -7,6 +7,7 @@ let info = document.querySelector('.info')
 let tentativasAparecer = document.querySelector('#tentativas')
 let chance = document.querySelector('#chances')
 let modoExibir = document.querySelector('.modos')
+let gameEnd = document.querySelector('.game-end')
 
 function player(){
     comecar.classList.add('invisivel')
@@ -91,7 +92,17 @@ function forca(){
     }
     palavraTamanho.innerHTML = `${exibir.join(' ')}`
     tentativasAparecer.innerHTML = `Tentativas : [${tentativas}]`
-    chance.innerHTML = `Chances: ${chances}`
+    if (chances >= 4){
+        chance.classList.add('color-green')
+        chance.innerHTML = `Chances: ${chances}`
+    }else if(chances < 4 && chances >=2){
+        chance.classList.add('color-yellow')
+        chance.innerHTML = `Chances: ${chances}`
+
+    }else{
+        chance.classList.add('color-red')
+        chance.innerHTML = `Chances: ${chances}`
+    }
 
     let set = new Set(palavra)
     document.querySelector('#informacoes-tentativa').value = ''

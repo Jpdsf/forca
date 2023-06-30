@@ -1,14 +1,46 @@
+*{
+    font-family: 'Didot';
+    text-transform: uppercase;
+}
 
+body{
+    background-image: url('');
+}
 
+.titulo{
+    color: #f1af09 ;
+}
 
+.jogo{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    
+}
 
 .centro {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: #0c0a35;
+    border-radius: 12px;
+    color: #ffffff;
 }
   
+.color-green{
+    color: #008000;
+}
+
+.color-yellow{
+    color: #ffbc00;
+}
+
+.color-red{
+    color: #ff0000;
+}
 
 .enviar{
     width: 20px;
@@ -19,8 +51,14 @@
 
 }
 
+.modos{
+    padding-top: 10px;
+}
+
 .opc{
-    width: 150px;
+    width: 220px;
+    margin-bottom: 25px;
+
 }
 
 .invisivel{
@@ -29,6 +67,16 @@
 
 .digitar{
     display: flex;
+}
+
+#tentativas{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.comecar{
+    align-items: center;
+    justify-content: center;
 }
 
 .glow-on-hover {
